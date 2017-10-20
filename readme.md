@@ -1,6 +1,8 @@
 # Caption to Skipthought vectors + classifer
 
-The following scripts are used to convert text video captions to skipthought vectors.
+The following scripts are used to convert text video captions to skipthought vectors and classify them using support vector machines with 5 fold CV. 
+The video captions were manually collected inorder to augment the LIRIS ACCEDE Dataset [http://liris-accede.ec-lyon.fr/].
+For access to  email proof of approval of LIRIS ACCEDE dataset to tpt7797 at rit dot edu.
 
 ## Requirements
 
@@ -32,7 +34,8 @@ python cap2skip.py
 python Text_svm.py
 ```
 ## To Do
-Flesh out documentation.
+1. Flesh out documentation.
+2. link back to main.
 
 ## Citation
 If this helps, please consider citing :)
