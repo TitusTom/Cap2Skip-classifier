@@ -39,10 +39,11 @@ python Text_svm.py
 
 ## Citation
 If this helps, please consider citing :)
-...
+
+```
 @article{thomas2017emotional,
   title={The Emotional Impact of Audio-Visual Stimuli},
   author={Thomas, Titus Pallithottathu},
   year={2017}
 }
-...
+```
