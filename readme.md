@@ -1,33 +1,45 @@
-# Sentiment, Tone, and Nature Classifiction of Tweets
+# Caption to Skipthought vectors + classifer
 
-This script is used to classify labeled tweets using an SVM classifier. 
+The following scripts are used to convert text video captions to skipthought vectors.
 
-The following are the recommended classes for each label.
-Sentiment : Postive, Neutral, Negative
-Tone      : Passive, Active, Agressive
-Nature    : Casual, Serious
+## Requirements
 
-Twitter dataset not provided due to it's sensitive nature. This script should work for any custom labeled twitter dataset.
-## Prerequisites
-
-1. CSV file of tweets in the following format:
-   Input CSV file in the following format: Tweets, Label1, label 2, ...label N
-2. The following python 2.7+ libraries:    
-    1. Nltk
-    2. Numpy
-    3. Pandas
-    4. ScikitLearn
+1. skipthoughts.py [https://github.com/ryankiros/skip-thoughts]
+2. The following python libraries:    
+    1. Numpy
+    2. Pandas
+    3. ScikitLearn
+3. CSV file in the following format. filename, captions
+4. (optional) for calssifier script filename, label 
 
 ## Getting Started
 
-1. Change line #13 to match your input file.
-2. Change line #15 to select which label to match.
-3. change line #21 to =['tweets', 'label1', 'label2',... 'labeln'], skiprows=1)
+### Captions -> Vectors
+1. Change line #6 to match your input file.
+2. Optionally, change output folder in line #7
+3. Grab the uni and bi models from the gettign started section in [https://github.com/ryankiros/skip-thoughts].
 
-## Running script
+### Vectors-> Classifer
+Change lines 9-16 and line 23 as needed.
+
+## Running 
+### Captions -> Vectors
 ```
-python PrepNclassify.py
+python cap2skip.py
+```
+### Vectors-> Classifer
+```
+python Text_svm.py
 ```
 ## To Do
+Flesh out documentation.
 
-1. Add twitter data collection scripts.
+## Citation
+If this helps, please consider citing :)
+...
+@article{thomas2017emotional,
+  title={The Emotional Impact of Audio-Visual Stimuli},
+  author={Thomas, Titus Pallithottathu},
+  year={2017}
+}
+...
