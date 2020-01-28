@@ -1,4 +1,4 @@
-# Caption to Skipthought vectors + classifer
+# Caption to Skipthought vectors + Classifier
 
 The following scripts are used to convert text video captions to skipthought vectors and classify them using support vector machines with 5 fold CV. 
 The video captions were manually collected inorder to augment the LIRIS ACCEDE Dataset [http://liris-accede.ec-lyon.fr/].
