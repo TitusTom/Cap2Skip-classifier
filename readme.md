@@ -21,7 +21,7 @@ For access to  email proof of approval of LIRIS ACCEDE dataset to tpt7797 at rit
 2. Optionally, change output folder in line #7
 3. Grab the uni and bi models from the gettign started section in [https://github.com/ryankiros/skip-thoughts].
 
-### Vectors-> Classifer
+### Vectors-> Classifier
 Change lines 9-16 and line 23 as needed.
 
 ## Running 
@@ -29,7 +29,7 @@ Change lines 9-16 and line 23 as needed.
 ```
 python cap2skip.py
 ```
-### Vectors-> Classifer
+### Vectors-> Classifier
 ```
 python Text_svm.py
 ```
